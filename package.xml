@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>test_meta</name>
+  <version>0.0.0</version>
+  <description>test_meta</description>
+
+  <author email="pbovbel@locusrobotics.com">Paul Bovbel</author>
+  <maintainer email="pbovbel@locusrobotics.com">Paul Bovbel</maintainer>
+
+  <license>Proprietary</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <test_depend>roslint</test_depend>
+  <test_depend>rostest</test_depend>
+
+</package>
