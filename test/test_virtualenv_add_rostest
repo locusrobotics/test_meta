@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import unittest
+import rostest
+import sys
+
+
+class TestAddVirtualenvRostest(unittest.TestCase):
+
+    def test_basic(self):
+        import transitions
+        self.assertTrue(transitions)
+
+
+if __name__ == '__main__':
+    rostest.rosrun('test_meta', 'test_add_virtualenv_rostest', TestAddVirtualenvRostest, sys.argv)

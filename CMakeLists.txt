@@ -12,6 +12,7 @@ include_directories(
 )
 
 if (CATKIN_ENABLE_TESTING)
+  find_package(catkin_virtualenv REQUIRED)
   find_package(roslint REQUIRED)
   find_package(rostest REQUIRED)
 
@@ -32,6 +33,24 @@ if (CATKIN_ENABLE_TESTING)
   )
   target_link_libraries(test_add_rostest_gtest
     ${catkin_LIBRARIES}
+  )
+
+  # catkin_add_nosetests
+  catkin_add_nosetests(test/test_catkin_add_nosetests.py)
+
+  # virtualenv + catkin_add_nosetests
+  catkin_generate_virtualenv()
+  catkin_add_nosetests(test/test_virtualenv_catkin_add_nosetests.py
+    DEPENDENCIES ${PROJECT_NAME}_generate_virtualenv
+  )
+
+  # virtualenv + add_rostest
+  catkin_install_python(
+    PROGRAMS
+      test/test_virtualenv_add_rostest
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+  add_rostest(test/test_virtualenv_add_rostest.test
+    DEPENDENCIES ${PROJECT_NAME}_generate_virtualenv
   )
 
 endif()
