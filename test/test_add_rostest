@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import unittest
+import rostest
+import sys
+
+
+class TestAddRostest(unittest.TestCase):
+
+    def test_basic(self):
+        self.assertTrue(True)
+
+
+if __name__ == '__main__':
+    rostest.rosrun('test_meta', 'test_add_rostest', TestAddRostest, sys.argv)
