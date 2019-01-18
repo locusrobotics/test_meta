@@ -8,7 +8,7 @@ tailorTestPipeline(
   // Release track to test branch against.
   release_track: '18.4',
   // Release label to pull test images from.
-  release_label: '18.4-candidate',
+  release_label: '18.4-rc',
   // OS distributions to test.
   distributions: ['xenial', 'bionic'],
   // Bundle flavour to test against.
