@@ -12,7 +12,7 @@ tailorTestPipeline(
   // OS distributions to test.
   distributions: ['xenial', 'bionic'],
   // Branch of tailor_meta to build against
-  tailor_meta_branch: 'master',
+  tailor_meta_branch: 'paulbovbel-patch-1',
   // Master or release branch associated with this track
   source_branch: 'master',
   // Docker registry where test image is stored
