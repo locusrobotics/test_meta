@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library('tailor-meta@master')_
+@Library('tailor-meta@paulbovbel-patch-1')_
 tailorTestPipeline(
   // Name of job that generated this test definition.
   rosdistro_job: '/ci/toydistro/master',
