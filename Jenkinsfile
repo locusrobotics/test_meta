@@ -11,8 +11,8 @@ tailorTestPipeline(
   release_label: 'hotdog',
   // OS distributions to test.
   distributions: ['xenial', 'bionic'],
-  // Branch of tailor_meta to build against
-  tailor_meta_branch: 'master',
+  // Version of tailor_meta to build against
+  tailor_meta: 'master',
   // Master or release branch associated with this track
   source_branch: 'master',
   // Docker registry where test image is stored
