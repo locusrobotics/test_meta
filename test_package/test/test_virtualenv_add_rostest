@@ -12,4 +12,4 @@ class TestAddVirtualenvRostest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    rostest.rosrun('test_meta', 'test_add_virtualenv_rostest', TestAddVirtualenvRostest, sys.argv)
+    rostest.rosrun('test_package', 'test_add_virtualenv_rostest', TestAddVirtualenvRostest, sys.argv)

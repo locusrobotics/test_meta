@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>test_meta</name>
+  <name>test_package</name>
   <version>0.1.0</version>
-  <description>test_meta</description>
+  <description>test_package</description>
 
   <author email="pbovbel@locusrobotics.com">Paul Bovbel</author>
   <maintainer email="pbovbel@locusrobotics.com">Paul Bovbel</maintainer>
