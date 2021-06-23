@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-@Library('tailor-meta@RST-4236_Make-timestamps-consistent')_
+@Library('tailor-meta@master')_
 tailorTestPipeline(
   // Name of job that generated this test definition.
   rosdistro_job: '/ci/toydistro/master',
@@ -12,7 +12,7 @@ tailorTestPipeline(
   // OS distributions to test.
   distributions: ['xenial', 'bionic'],
   // Version of tailor_meta to build against
-  tailor_meta: 'RST-4236_Make-timestamps-consistent',
+  tailor_meta: 'master',
   // Master or release branch associated with this track
   source_branch: 'master',
   // Docker registry where test image is stored
