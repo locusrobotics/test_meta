@@ -10,7 +10,7 @@ tailorTestPipeline(
   // Release label to pull test images from.
   release_label: 'hotdog',
   // OS distributions to test.
-  distributions: ['xenial', 'bionic'],
+  distributions: ['focal'],
   // Version of tailor_meta to build against
   tailor_meta: 'master',
   // Master or release branch associated with this track
